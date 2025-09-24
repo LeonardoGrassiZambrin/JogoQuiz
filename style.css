@@ -1,75 +1,74 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #333;
+    color: #eee;
+    font-family: serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
 }
 
 .quiz-container {
     background-color: #fff;
-    padding: 20px 40px;
+    color: #000;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 90%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.answers-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.grid-answers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 15px;
-}
-
-.answer-item {
-    background-color: #eee;
-    /* Aumenta o preenchimento para um visual mais robusto */
-    padding: 100px; 
-    border-radius: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    max-width: 600px;
     text-align: center;
-    /* Aumenta o tamanho da fonte */
-    font-size: 1.2rem;
-    font-weight: bold;
 }
 
-.answer-item:hover {
-    background-color: #ddd;
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.selected {
-    background-color: #007BFF;
-    color: #fff;
-}
-
-#submit {
-    /* Ajusta o preenchimento e a fonte para o botão grande */
-    padding: 20px 40px; 
-    font-size: 1.5rem;
-    width: 100%;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.btn-grid {
+    display: grid;
+    gap: 10px;
     margin-top: 20px;
 }
 
-#submit:hover {
-    background-color: #0056b3;
+.btn {
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.btn.correct {
+    background-color: #a8d582;
+    border-color: #7ab859;
+}
+
+.btn.wrong {
+    background-color: #e57373;
+    border-color: #c62828;
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
