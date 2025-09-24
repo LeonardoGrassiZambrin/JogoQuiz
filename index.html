@@ -13,10 +13,23 @@
             <div id="image-container"></div>
             <div id="answer-buttons" class="btn-grid"></div>
         </div>
-        <div id="result-container" style="display: none;">
-            <h2>Quiz Concluído!</h2>
-            <p id="score-text"></p>
-            <button id="restart-button">Reiniciar Quiz</button>
+
+        <div id="error-container" style="display: none;">
+            <h2 id="error-message">Você errou!!</h2>
+            <button id="continue-button">Continuar</button>
+            <button id="give-up-button">Desistir</button>
+        </div>
+
+        <div id="completion-container" style="display: none;">
+            <h2>Parabéns!! você concluiu o Quiz</h2>
+            <p>Espera um quiz no final...errou</p>
+            <button id="credits-button">Créditos</button>
+            <button id="restart-from-end-button">Início</button>
+        </div>
+
+        <div id="game-over-container" style="display: none;">
+            <h2>Sério?! você pensou que seu sofrimento iria acabar?</h2>
+            <button id="restart-from-gameover-button">Início</button>
         </div>
     </div>
     <script src="script.js"></script>
